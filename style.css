@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left bottom,rgb(86, 5, 118),rgb(30, 152, 196));
+}
+.list-page{
+    height: 60vh;
+    width: 50vh;
+    border: 2px solid rgb(8, 4, 4);
+    border-radius: 20px;
+}
+.list-page .heading{
+    height: 7vh;
+    width: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 1;
+    background: linear-gradient(to left bottom,rgb(86, 5, 118),rgb(30, 152, 196));
+}
+.list-page .heading h2{
+    color: aliceblue;
+    font-family: cursive;
+}
+
+.list-page .elements-todo{
+    height: 48vh;
+    width: 50vh;
+    background-color: white;
+    display: flex;
+    align-items: start;
+    background-color: aqua;
+    justify-content: center;
+    flex-direction: column;
+}
+.elements-todo ol{
+    text-decoration: none;
+    margin: 0.4vh 4vh 0.3vh;
+    list-style: none;
+
+}
+.add{
+    position: relative;
+    margin-top: auto;
+    height: 6vh;
+    width: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+.elements-todo .input-box{
+    outline: none;
+    border: none;
+    text-decoration: none;
+    border: 1px solid rgb(4, 20, 20);
+    margin: 1vh;
+    height: 2.6vh;
+    width: 38vh;
+    color: indigo;
+    padding: 0.5vh;
+    border-radius: 1vh;
+    font-size: 2vh;
+    
+}
+.input-box::placeholder{
+    color: black;
+}
+  
+.elements-todo .add-btn{
+    padding: 0.5vh;
+    outline: none;
+    margin: 1vh;
+    text-decoration: none;
+    border: none;
+    border: 1px solid rgb(4, 20, 20);
+    background-color: white;
+    border-radius: 1vh;
+    color: indigo;
+}
+
+#Myfooter{
+    height: 5vh;
+    width: 50vh;
+    font-size: 2vh;
+    color: white;
+    border-top: 1px solid black;
+    background-color: rgb(153, 116, 246);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
