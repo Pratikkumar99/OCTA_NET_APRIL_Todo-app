@@ -11,14 +11,14 @@
     background: linear-gradient(to left bottom,rgb(86, 5, 118),rgb(30, 152, 196));
 }
 .list-page{
-    height: 60vh;
-    width: 50vh;
+    height: 70vh;
+    width: 60vh;
     border: 2px solid rgb(8, 4, 4);
     border-radius: 20px;
 }
 .list-page .heading{
     height: 7vh;
-    width: 50vh;
+    width: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,12 +33,12 @@
 }
 
 .list-page .elements-todo{
-    height: 48vh;
-    width: 50vh;
+    height: 58vh;
+    width: 60vh;
     background-color: white;
     display: flex;
     align-items: start;
-    background-color: aqua;
+    background-color: transparent;
     justify-content: center;
     flex-direction: column;
 }
@@ -52,11 +52,11 @@
     position: relative;
     margin-top: auto;
     height: 6vh;
-    width: 50vh;
+    width: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: transparent;
 }
 
 .elements-todo .input-box{
@@ -65,20 +65,56 @@
     text-decoration: none;
     border: 1px solid rgb(4, 20, 20);
     margin: 1vh;
-    height: 2.6vh;
-    width: 38vh;
-    color: indigo;
+    height: 4vh;
+    width: 48vh;
     padding: 0.5vh;
+    padding-left: 5vh;
     border-radius: 1vh;
     font-size: 2vh;
     
 }
 .input-box::placeholder{
+    padding-left: 0vh;
     color: black;
 }
-  
+.list-out{
+    margin: 0vh;
+    height: 55vh;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    position: fixed;
+    width: 60vw;
+}
+.list{
+    height: fit-content;
+    width: auto;
+}
+
+li{
+    list-style-type: none;
+    font-size: 3vh;
+    background-color: white;
+    padding: 1vh;
+    font-size: 2vh;
+    margin-bottom: 1vh;
+    max-width: 60vw;
+    min-width: auto;
+    border-radius: 2vh;
+    
+}
+.done{
+    text-decoration: line-through;
+}
+.del{
+    height: 3vh;
+    width: 3vh;
+    border: 2px solid black;
+    border-radius: 50%;
+}
 .elements-todo .add-btn{
-    padding: 0.5vh;
+    padding: 1.3vh;
     outline: none;
     margin: 1vh;
     text-decoration: none;
@@ -91,7 +127,7 @@
 
 #Myfooter{
     height: 5vh;
-    width: 50vh;
+    width: 60vh;
     font-size: 2vh;
     color: white;
     border-top: 1px solid black;
