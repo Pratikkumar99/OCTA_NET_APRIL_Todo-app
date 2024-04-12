@@ -14,6 +14,7 @@ addBtn.addEventListener("click",()=>{
         let del=document.createElement("div");
         li.after(del);
         del.classList.add("del");
+    
         let check =true;
         del.addEventListener("click",()=>{
             let messsge = prompt("Do you want delete this task?(yes/no).");
