@@ -1,6 +1,9 @@
 let addBtn=document.querySelector(".add-btn");
 let inputBox = document.querySelector(".input-box");
 let listwork =document.querySelector(".list");
+let mode =document.querySelector(".mode");
+let ball =document.querySelector(".ball");
+let Body = document.querySelector(".container");
 
 addBtn.addEventListener("click",()=>{
     if(inputBox.value===""){
@@ -12,7 +15,7 @@ addBtn.addEventListener("click",()=>{
         listwork.prepend(li);
         inputBox.value="";
         let del=document.createElement("div");
-        listwork.append(del);
+        li.append(del);
         del.classList.add("del");
         let check =true;
         del.addEventListener("click",()=>{
@@ -34,4 +37,21 @@ addBtn.addEventListener("click",()=>{
             }
         });
     }
+});
+
+ball.addEventListener("click",()=>{
+    let Mode =true;
+    if(Mode){
+        mode.classList.add("start");
+        mode.classList.remove("end");
+        Body.style.backgroundColor="black";
+        Mode=false;
+    }
+    else{
+        mode.classList.add("end");
+        mode.classList.remove("start");
+        Body.style.backgroundColor="white";
+        Mode=true;
+    }
+    
 });
