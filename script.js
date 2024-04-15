@@ -12,9 +12,8 @@ addBtn.addEventListener("click",()=>{
         listwork.prepend(li);
         inputBox.value="";
         let del=document.createElement("div");
-        li.after(del);
+        listwork.append(del);
         del.classList.add("del");
-    
         let check =true;
         del.addEventListener("click",()=>{
             let messsge = prompt("Do you want delete this task?(yes/no).");
@@ -26,7 +25,7 @@ addBtn.addEventListener("click",()=>{
         li.addEventListener("click",()=>{
             if(check){
                 li.classList.add("done");
-                
+
                 check=false;
 
             }else{
