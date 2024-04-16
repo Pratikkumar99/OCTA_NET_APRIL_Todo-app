@@ -12,8 +12,8 @@
     flex-direction: column;
 }
 .mode{
-    height: 4vh;
-    width: 10vw;
+    height: 3vh;
+    width: 8vh;
     border-radius: 5vh;
     background: linear-gradient(to left bottom,cadetblue,rgb(30, 152, 196));
     position: absolute;
@@ -21,10 +21,11 @@
     display: flex;
     align-items: center;
     right: 2vh;
+    border: 2px solid black;
 }
 .ball{
-    height: 3.8vh;
-    width: 3.8vh;
+    height: 2.8vh;
+    width: 2.8vh;
     border-radius: 50%;
     background-color: black;
 }
@@ -44,6 +45,7 @@
     width: 80vw;
     border-radius: 20px;
 }
+
 .list-page .heading{
     height: 7vh;
     width: 80vw;
@@ -53,6 +55,10 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background: linear-gradient(to left bottom,cadetblue,rgb(30, 152, 196));
+}
+.heading:hover{
+    background-color: brown;
+    color: white;
 }
 .list-page .heading h2{
     color: aliceblue;
@@ -101,6 +107,7 @@ li{
     background-color: white;
     
 }
+
 .done{
     background-color: cadetblue;
     text-decoration: line-through;
@@ -108,17 +115,21 @@ li{
 .del{
     height: 3vh;
     width: 3vh;
-    left: 50vh;
+    display: flex;
+    font-size: 3vh;
+    justify-content: center;
+    align-items: center;
+ 
     position: relative;
-    left: 57.4vw;
-    background-image: url("delete.png");
+  
     background-repeat: none;
     background-size: cover;    
-    border: 2px solid black;
-    border-radius: 50%;
+    background-color:cadetblue;
 }
 .del:hover{
     background-color: red;
+    border-radius: 50%;
+    border: none;
 }
 .add{
     position: relative;
@@ -144,9 +155,8 @@ li{
 }
 .input-box::placeholder{
     color: black;
-    font-size: 1.4vh;
+    font-size: 1.6vh;
 }
-
 
 .elements-todo .add-btn{
     padding: 0.9vh;
@@ -164,7 +174,7 @@ li{
     height: 5vh;
     width: 80vw;
     font-size: 2vh;
-    color: cadetblue;
+    color: black;
     border-top: 1px solid black;
     background: linear-gradient(to left bottom,cadetblue,rgb(30, 152, 196));
     border-bottom-left-radius: 20px;
