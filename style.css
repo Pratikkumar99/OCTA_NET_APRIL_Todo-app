@@ -24,7 +24,6 @@
     
 }
 .ball:hover{
-    background-color: rgb(222, 241, 202);
     border: 1px solid white;
 }
 .ball{
