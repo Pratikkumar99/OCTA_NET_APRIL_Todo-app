@@ -21,6 +21,11 @@
     display: flex;
     align-items: center;
     right: 2vh;
+    
+}
+.ball:hover{
+    background-color: rgb(222, 241, 202);
+    border: 1px solid white;
 }
 .ball{
     height: 2.8vh;
@@ -43,6 +48,9 @@
     height: 60vh;
     width: 80vw;
     border-radius: 20px;
+}
+.list-page:hover{
+    border: 2px solid white;
 }
 
 .list-page .heading{
@@ -92,14 +100,16 @@
     margin: 0.4vh 4vh 0.3vh;
     list-style: none;
     gap: 1vw;
-   
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;   
 }
 li{
     list-style-type: none;
     height: fit-content;
     font-size: 3vh;
-    width: 90%;
+    width: 80%;
     margin-top: 1vh;
     padding: 1vh;
     border-radius: 2vh;
@@ -112,9 +122,9 @@ li{
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    width: 99%;
-    gap: 1vh;
+    justify-content: space-between;
+    width: 90%;
+    
 }
 li:hover{
     background-color: rgb(222, 241, 202);
@@ -132,7 +142,7 @@ li:hover{
     font-size: 3vh;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: sticky;
     background-repeat: none;
     background-size: cover;    
     background-color:cadetblue;
@@ -161,12 +171,16 @@ li:hover{
     outline: none;
     border: none;
     text-decoration: none;
-    border: 1px solid black;
+    text-decoration: none;
     width: 40vw;
-    height: 3.2vh;
+    height: 3.3vh;
     padding-left: 1.3vh;
     padding-right: 1.3vh;
     border-radius: 1vh;
+}
+.input-box:hover{
+    background-color: rgb(222, 241, 202);
+    border: 1px solid white;
 }
 .input-box::placeholder{
     color: black;
@@ -174,25 +188,24 @@ li:hover{
 }
 
 .elements-todo .add-btn{
-    padding: 0.9vh;
+    padding: 0.8vh;
     margin-left: 2vh;
     outline: none;
     text-decoration: none;
     border: none;
-    border: 1px solid rgb(4, 20, 20);
     background-color: white;
     border-radius: 1vh;
 }
 .add-btn:hover{
     background-color: rgb(222, 241, 202);
     color: black;
-
+    border: 1px solid white;
 }
 
 #Myfooter{
     height: 5vh;
     width: 80vw;
-    font-size: 2vh;
+    font-size: 1.5vh;
     color: black;
     border-top: 1px solid black;
     background: linear-gradient(to left bottom,cadetblue,rgb(30, 152, 196));
